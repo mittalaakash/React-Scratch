@@ -5,6 +5,7 @@ import EventBind from './Components/EvenBind';
 import FunctionClick from './Components/FunctionClick';
 import Greet from './Components/Greet';
 import Message from './Components/Message';
+import ParentComponent from './Components/ParentComponent';
 import Welcome from './Components/Welcome';
 
 class App extends Component {
@@ -12,7 +13,8 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <EventBind />
+        <ParentComponent />
+        {/* <EventBind /> */}
         {/* <FunctionClick /> */}
         {/* <Greet name='Clark' /> */}
         {/* <Welcome name='Diana' /> */}
