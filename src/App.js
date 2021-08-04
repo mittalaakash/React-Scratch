@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Counter from './Components/Counter';
 import EventBind from './Components/EvenBind';
+import Form from './Components/Form';
 import FunctionClick from './Components/FunctionClick';
 import Greet from './Components/Greet';
 import Message from './Components/Message';
@@ -22,6 +23,7 @@ class App extends Component {
         {/* <Message /> */}
         {/* <Counter /> */}
         {/* <NameList /> */}
+        <Form />
       </div>
     );
   }
