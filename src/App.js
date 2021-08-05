@@ -3,11 +3,13 @@ import './App.css';
 import Counter from './Components/Counter';
 import EventBind from './Components/EvenBind';
 import Form from './Components/Form';
+import FragmentDemo from './Components/FragmentDemo';
 import FunctionClick from './Components/FunctionClick';
 import Greet from './Components/Greet';
 import Message from './Components/Message';
 import NameList from './Components/NameList';
 import ParentComponent from './Components/ParentComponent';
+import PureComponent from './Components/PureComp';
 import Welcome from './Components/Welcome';
 
 class App extends Component {
@@ -23,7 +25,9 @@ class App extends Component {
         {/* <Message /> */}
         {/* <Counter /> */}
         {/* <NameList /> */}
-        <Form />
+        {/* <Form /> */}
+        {/* <FragmentDemo /> */}
+        <PureComponent />
       </div>
     );
   }
