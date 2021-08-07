@@ -10,6 +10,7 @@ import Message from './Components/Message';
 import NameList from './Components/NameList';
 import ParentComponent from './Components/ParentComponent';
 import PureComponent from './Components/PureComp';
+import RefsDemo from './Components/RefsDemo';
 import Welcome from './Components/Welcome';
 
 class App extends Component {
@@ -27,7 +28,8 @@ class App extends Component {
         {/* <NameList /> */}
         {/* <Form /> */}
         {/* <FragmentDemo /> */}
-        <PureComponent />
+        {/* <PureComponent /> */}
+        <RefsDemo />
       </div>
     );
   }
