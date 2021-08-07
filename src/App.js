@@ -1,39 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Counter from './Components/Counter';
-import EventBind from './Components/EvenBind';
-import Form from './Components/Form';
-import FragmentDemo from './Components/FragmentDemo';
-import FRParentIput from './Components/FRParentIput';
-import FunctionClick from './Components/FunctionClick';
-import Greet from './Components/Greet';
-import Message from './Components/Message';
-import NameList from './Components/NameList';
-import ParentComponent from './Components/ParentComponent';
-import ParentRef from './Components/ParentRef';
-import PureComponent from './Components/PureComp';
-import RefsDemo from './Components/RefsDemo';
-import Welcome from './Components/Welcome';
+import PortalDemo from './Components/PortalDemo';
 
 class App extends Component {
   state = {};
   render() {
     return (
       <div className='App'>
-        {/* <ParentComponent /> */}
-        {/* <EventBind /> */}
-        {/* <FunctionClick /> */}
-        {/* <Greet name='Clark' /> */}
-        {/* <Welcome name='Diana' /> */}
-        {/* <Message /> */}
-        {/* <Counter /> */}
-        {/* <NameList /> */}
-        {/* <Form /> */}
-        {/* <FragmentDemo /> */}
-        {/* <PureComponent /> */}
-        {/* <RefsDemo /> */}
-        {/* <ParentRef /> */}
-        <FRParentIput />
+        <PortalDemo />
       </div>
     );
   }
