@@ -4,6 +4,7 @@ import Counter from './Components/Counter';
 import EventBind from './Components/EvenBind';
 import Form from './Components/Form';
 import FragmentDemo from './Components/FragmentDemo';
+import FRParentIput from './Components/FRParentIput';
 import FunctionClick from './Components/FunctionClick';
 import Greet from './Components/Greet';
 import Message from './Components/Message';
@@ -31,7 +32,8 @@ class App extends Component {
         {/* <FragmentDemo /> */}
         {/* <PureComponent /> */}
         {/* <RefsDemo /> */}
-        <ParentRef />
+        {/* <ParentRef /> */}
+        <FRParentIput />
       </div>
     );
   }
