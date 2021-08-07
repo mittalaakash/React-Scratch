@@ -9,6 +9,7 @@ import Greet from './Components/Greet';
 import Message from './Components/Message';
 import NameList from './Components/NameList';
 import ParentComponent from './Components/ParentComponent';
+import ParentRef from './Components/ParentRef';
 import PureComponent from './Components/PureComp';
 import RefsDemo from './Components/RefsDemo';
 import Welcome from './Components/Welcome';
@@ -29,7 +30,8 @@ class App extends Component {
         {/* <Form /> */}
         {/* <FragmentDemo /> */}
         {/* <PureComponent /> */}
-        <RefsDemo />
+        {/* <RefsDemo /> */}
+        <ParentRef />
       </div>
     );
   }
