@@ -1,13 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
-import PortalDemo from './Components/PortalDemo';
+import ErrorBoundary from './Components/ErrorBoundary';
+import Hero from './Components/Hero';
 
 class App extends Component {
-  state = {};
   render() {
     return (
       <div className='App'>
-        <PortalDemo />
+        <ErrorBoundary>
+          <Hero heroName='Batman' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='SuperMan' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='IronMan' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='Joker' />
+        </ErrorBoundary>
       </div>
     );
   }
