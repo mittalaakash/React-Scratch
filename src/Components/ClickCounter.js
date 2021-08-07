@@ -1,23 +1,15 @@
 import React, { Component } from 'react';
+import withCounter from './withCounter';
 
 export class ClickCounter extends Component {
-  state = {
-    count: 0,
-  };
-  clickHandler = () => {
-    this.setState(prevState => ({
-      count: prevState.count + 1,
-    }));
-  };
   render() {
+    const { count, incrementer } = this.props;
     return (
       <div>
-        <button onClick={this.clickHandler}>
-          Counter is {this.state.count}
-        </button>
+        <button onClick={incrementer}>Counter is {count}</button>
       </div>
     );
   }
 }
 
-export default ClickCounter;
+export default withCounter(ClickCounter);
