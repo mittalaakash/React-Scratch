@@ -1,37 +1,13 @@
 import React, { Component } from 'react';
 
-export class Counter extends Component {
-  state = {
-    count: 0,
+class Counter extends Component {
+  state = { count: 0 };
+  incrementCount = () => {
+    this.setState(prevState => ({ count: prevState.count + 1 }));
   };
-
-  increment() {
-    this.setState(prevState => ({
-      count: prevState.count + 1,
-    }));
-  }
-  incre() {
-    this.increment();
-    this.increment();
-    this.increment();
-    this.increment();
-    this.increment();
-  }
-
   render() {
     return (
-      <div>
-        count {this.state.count}
-        <br />
-        <button
-          onClick={() => {
-            this.incre();
-            console.log(this.state.count);
-          }}
-        >
-          Incementer
-        </button>
-      </div>
+      <div>{this.props.render(this.state.count, this.incrementCount)}</div>
     );
   }
 }
