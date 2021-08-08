@@ -4,23 +4,16 @@ import ClickCounterTwo from './Components/ClickCounterTwo';
 import HoverCounterTwo from './Components/HoverCounterTwo';
 import Counter from './Components/Counter';
 import User from './Components/User';
+import ComponentC from './Components/ComponentC';
+import { UserProvider } from './Components/userContext';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Counter
-          render={(count, increment) => (
-            <HoverCounterTwo count={count} increment={increment} />
-          )}
-        />
-        <Counter
-          render={(count, increment) => (
-            <ClickCounterTwo count={count} increment={increment}>
-              <button>Clicked {count} times</button>
-            </ClickCounterTwo>
-          )}
-        />
+        <UserProvider value='Aakash'>
+          <ComponentC />
+        </UserProvider>
       </div>
     );
   }
